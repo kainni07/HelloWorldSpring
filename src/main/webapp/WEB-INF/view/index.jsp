@@ -15,9 +15,11 @@
         <f:form modelAttribute="loginForm" action="login" method="post">
             <div>
                 ユーザ名<input type="text" id="loginName" name="loginName" />
+                <f:errors path="loginName" element="div" cssStyle="color:red"></f:errors>
             </div>
             <div>
                 パスワード<input type="text" id="loginPassword" name="loginPassword">
+                <f:errors path="loginPassword" element="div" cssStyle="color:red"></f:errors>
             </div>
             <div>
                 <input type="submit" value="ログイン" />
